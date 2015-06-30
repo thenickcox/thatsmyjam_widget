@@ -1,0 +1,33 @@
+<div class='thatsmyjam'>
+  <p class='listening-to'>My current jam:</p>
+  <div class='jam-images'>
+    <img class='jam-avatar' src='http://www.thisismyjam.com/includes/image/logo_beta@2x.png'>
+    <img class='user-avatar' src={{person.avatarSmall}}>
+  </div>
+  <div id='hasJam'>
+    <div class='jam-body'>
+      <header class='jam-header'>
+        <h2 class='jam-title'>
+          <a href={{person.currentJam}}>{{jam.title}}</a>
+        </h2>
+        <h3 class='jam-artist'>
+          by
+          <span>{{jam.artist}}</span>
+        </h3>
+      </header>
+      <figcaption class='jam-caption'>{{jam.caption}}</figcaption>
+      <small class='jam-posted'>
+        Posted
+        <date id='jam-creation-date'>{{jam.creationDate}}</date>
+      </small>
+    </div>
+  </div>
+  <div id='noJam'>
+    <p>I don’t currently have a jam. <a href='https://www.thisismyjam.com/thenickcox'>Check out what I’ve loved in the past.</a></p>
+  </div>
+
+  <cite class='jam-cite'>
+    Retrieved from the
+    <a href='https://api.thatsmyjam.com'>That’s My Jam API</a>.
+  </cite>
+</div>
